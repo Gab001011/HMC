@@ -5,6 +5,9 @@
 
 from AMS_5915 import AMS5915
 from machine import Pin
+from Latching import Latching
+import raspberry_Pi_pico_def
+import time
 
 class Module :
     ''' '''
@@ -31,5 +34,5 @@ class Module :
         # ouvre la valve pendant 5 sec.
         
         #self.valve.value(1)
-        # wait 5 sec
+        time.sleep(5)
         #self.valve.value(0)
